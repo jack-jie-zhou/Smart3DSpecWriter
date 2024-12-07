@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Smart3DSpecWriter.PipeBranchTable.ReadPipeBranchTable">
+    <Position X="4" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAQAAAAhAAAAAAAAAA=</HashCode>
+      <FileName>PIpeBranchTable\ReadPipeBranch.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_sheet" />
+      <Field Name="_pbSheet" />
+      <Field Name="_app" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Smart3DSpecWriter.PipeBranchTable.PipeBranchSheet">
+    <Position X="0.5" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAABAIAAEAAAACAKAAKAAAAAAEBEAAAAQAgQA=</HashCode>
+      <FileName>PIpeBranchTable\PipeBranchSheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Smart3DSpecWriter.PipeBranchTable.PipeBranchRowList">
+    <Position X="11" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAgAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PIpeBranchTable\PipeBranchRowList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Smart3DSpecWriter.PipeBranchTable.PipeBranchRow">
+    <Position X="6" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABQAAAAAAAAAAAAAAAAACAAAAAEAAEACAAAA=</HashCode>
+      <FileName>PIpeBranchTable\PipeBranchRow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ShortCode" />
+      <Property Name="Angle" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Smart3DSpecWriter.PipeBranchTable.PipeBranchShortCode">
+    <Position X="2.25" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ABBAIAAAAAAAAAAAAAAAAAAA4AAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>PIpeBranchTable\PipeBranchShortCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Smart3DSpecWriter.PipeBranchTable.PipeBranchAngle">
+    <Position X="8.5" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAAABAAAAAAggAAAAAAAAAAAAJAAAAAAEAAAAiA=</HashCode>
+      <FileName>PIpeBranchTable\PipeBranchAngle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Microsoft.Office.Interop.Excel.Worksheet">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Microsoft.Office.Interop.Excel.Application">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

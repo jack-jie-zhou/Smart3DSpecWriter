@@ -1,0 +1,3467 @@
+[
+  {
+    "HeadSize": 0.75,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 1,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reducing Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 1,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 1.5,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reducing Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 1.5,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reducing Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 1.5,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 2,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 2,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 2,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 2,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 3,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 3,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 3,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 3,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 3,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 4,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 4,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 4,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 4,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 4,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 4,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 6,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 6,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 6,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 6,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 6,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 6,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 6,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 8,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 8,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 8,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 8,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 8,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 8,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 8,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 8,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 10,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 10,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 10,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 10,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 10,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 10,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 10,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 10,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 10,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 12,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 14,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 16,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 18,
+    "BranchSize": 18,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 18,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Weld",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 20,
+    "BranchSize": 20,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 18,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 20,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 24,
+    "BranchSize": 24,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 18,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 20,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 24,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 26,
+    "BranchSize": 26,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 18,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 20,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 24,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 26,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 28,
+    "BranchSize": 28,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 18,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 20,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 24,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 26,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 28,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 30,
+    "BranchSize": 30,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 18,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 20,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 24,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 26,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 28,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 30,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 32,
+    "BranchSize": 32,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 18,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 20,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 24,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 26,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 28,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 30,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 32,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 34,
+    "BranchSize": 34,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 0.75,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 1,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 1.5,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Sockolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 2,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 3,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 4,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 6,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 8,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Weldolet",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 10,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 12,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 14,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 16,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 18,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 20,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 24,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 26,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 28,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 30,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 32,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 34,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Reinforcing Pad",
+      "ShortCode2": "Weldolet",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  },
+  {
+    "HeadSize": 36,
+    "BranchSize": 36,
+    "Angle": {
+      "AngleHigh": "90.5deg",
+      "AngleLow": "89.5deg"
+    },
+    "ShortCode": {
+      "ShortCode1": "Tee",
+      "ShortCode2": "",
+      "ShortCode3": ""
+    },
+    "HeadUnitType": "in",
+    "BranchUnitType": "in"
+  }
+]
