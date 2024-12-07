@@ -82,7 +82,7 @@
             this.dg1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dg1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg1.Location = new System.Drawing.Point(493, 100);
+            this.dg1.Location = new System.Drawing.Point(387, 100);
             this.dg1.Name = "dg1";
             this.dg1.RowHeadersWidth = 62;
             this.dg1.RowTemplate.Height = 28;
@@ -93,7 +93,7 @@
             // Form1
             // 
             this.AcceptButton = this.bnSearch;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);  
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1533, 1270);
             this.Controls.Add(this.dg1);

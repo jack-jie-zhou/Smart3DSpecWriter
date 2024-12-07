@@ -18,6 +18,9 @@ namespace Smart3DSpecWriter.Excel
         /// </summary>
         //sheet
         public string SheetName { get; private set; }
+        /// <summary>
+        /// Reference to current worksheet
+        /// </summary>
         private Worksheet _sheet;
 
         //row and column numbers
@@ -42,15 +45,37 @@ namespace Smart3DSpecWriter.Excel
         /// </summary>
         public int EndRowNumber { get; set; }
 
-
+        /// <summary>
+        /// The number of last column in defintion row
+        /// </summary>
         public int DefinitionLastColumnNumber { get; set; }
+
+        /// <summary>
+        /// The number of the last column in detail section
+        /// </summary>
         public int DetailLastColumnNumber { get; set; }
 
         //Definition row and Current Detail row info
+        /// <summary>
+        /// The cells infomation of the title row of detail section
+        /// </summary>
         public List<CellInfo> DetailTitleRowInformation => ReadDetailsTitleRow();
+
+        /// <summary>
+        /// The cells information of the definition title row
+        /// </summary>
         public List<CellInfo> DefinitionRowInfomation => ReadDefinitionRow();
 
+        /// <summary>
+        /// The Value of the PartClassType in Definition Row. e.g. "PipeComponentClass", "ValveOperatorClass", "PipeStockClass"
+        /// </summary>
         public string PartClassType { get; internal set; }
+
+        /// <summary>
+        /// Get current SheetInfo data by calling "GetSheetRowAndColumnInformation"
+        /// </summary>
+        /// <param name="sheet"></param>
+        /// <exception cref="ArgumentNullException"></exception>
         public SheetInfo(Worksheet sheet)
         {
             _sheet = sheet ?? throw new ArgumentNullException(nameof(sheet));
@@ -58,6 +83,11 @@ namespace Smart3DSpecWriter.Excel
 
         }
 
+
+        /// <summary>
+        /// <para>Get the following properties for SheetInfo in a worksheet</para>
+        /// <para> Head, Defintion, Start, End, DefinitionLasColumnNumber, DetailastColumnNumber, EndRowNumber</para>
+        /// </summary>
         private void GetSheetRowAndColumnInformation()
         {
             try
@@ -92,6 +122,11 @@ namespace Smart3DSpecWriter.Excel
             }
         }
 
+        /// <summary>
+        /// if the row is empty(no text in the row), return true
+        /// </summary>
+        /// <param name="rowNumber"></param>
+        /// <returns></returns>
         private bool IsEmptyRow(int rowNumber)
         {
             string s = _sheet.Cells[rowNumber, 1].Value as string;
@@ -119,6 +154,10 @@ namespace Smart3DSpecWriter.Excel
 
         }
 
+        /// <summary>
+        ///  Read the data value of definition row. Jump the comment and empty rows. 
+        /// </summary>
+        /// <returns>if definition row contains no data, or it is empty, return null. or List(CellInfo) </returns>
         public List<CellInfo> ReadDefinitionRow()
         {
             List<CellInfo> list = new List<CellInfo>();
@@ -166,6 +205,10 @@ namespace Smart3DSpecWriter.Excel
             }
         }
 
+        /// <summary>
+        /// Read title informatio of the detail section
+        /// </summary>
+        /// <returns></returns>
         public List<CellInfo> ReadDetailsTitleRow()
         {
             List<CellInfo> list = new List<CellInfo>();
@@ -190,7 +233,11 @@ namespace Smart3DSpecWriter.Excel
             }
         }
 
-
+        /// <summary>
+        /// read the data in detail section of selected row
+        /// </summary>
+        /// <param name="row">current select row</param>
+        /// <returns>return null on error</returns>
         public List<CellInfo> ReadDetailsRow(int row)
         {
             List<CellInfo> rowInfo = DetailTitleRowInformation;
