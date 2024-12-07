@@ -15,7 +15,7 @@ namespace Smart3DSpecWriter
     public partial class Smart3DAddIn
     {
         /// <summary>
-        /// Excel 窗口顶部的命令面板
+        /// Excel 窗口右部的任务面板
         /// </summary>
         public CustomTaskPane _customTaskPane;
 
@@ -28,13 +28,32 @@ namespace Smart3DSpecWriter
         /// A string list that contains all the sheets in current opened Excel file
         /// </summary>
         public List<string> _sheetNameList = new List<string>();
+
+        /// <summary>
+        /// Current Worksheet
+        /// </summary>
         private Worksheet _sheet;
+
+        /// <summary>
+        /// Current SheetInfo
+        /// </summary>
         private SheetInfo _sheetInfo;
 
-        //Copy
+        /// <summary>
+        /// Defintion Cell list for Copy
+        /// </summary>
         private List<CellInfo> _definitionInformationForCopy;
+
+        /// <summary>
+        /// Detail Cell list for Copy
+        /// </summary>
         private List<CellInfo> _detailInformationForCopy;
 
+        /// <summary>
+        /// Add BrowserControl the CustomTaskPanes (_customTaskPane)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
             _browserControl = new BrowserControl();
@@ -46,6 +65,9 @@ namespace Smart3DSpecWriter
             RegisterEventHandlers();
         }
 
+        /// <summary>
+        /// Whenever a new file is opened, We need a new instance of BrowserControl, and need to Activate ActiveWorkbook
+        /// </summary>
        public void SetBrowserControlToNewFile()
         {
             try
@@ -68,6 +90,9 @@ namespace Smart3DSpecWriter
             }
         }
 
+        /// <summary>
+        /// Set Logger file name as `Smart3DSpecWriterLog.log`
+        /// </summary>
         private void SetLogger()
         {
             Log.Logger = new LoggerConfiguration().MinimumLevel.Debug().WriteTo.File("Smart3DSpecWriterLog.log").CreateLogger();
@@ -82,18 +107,31 @@ namespace Smart3DSpecWriter
         }
 
 
-
+        /// <summary>
+        /// Call ActiveSheetChanged(sheet)
+        /// </summary>
+        /// <param name="Sh"></param>
         private void Application_SheetActivate(object Sh)
         {
             Log.Information("Application_SheetActivate(object Sh)");
             ActiveSheetChanged(Sh);
         }
+        /// <summary>
+        /// Call `WorkbookActivate` and `SetBroswerControlToNewfile`
+        /// </summary>
+        /// <param name="Wb"></param>
         private void Application_WorkbookActivate(Microsoft.Office.Interop.Excel.Workbook Wb)
         {
             Log.Information("WorkbookActivate");
             SetBrowserControlToNewFile();
             WorkbookActivate(Wb);
         }
+
+        /// <summary>
+        /// Call `SheetSelectionChanged`
+        /// </summary>
+        /// <param name="Sh"></param>
+        /// <param name="Target"></param>
         private void Application_SheetSelectionChange(object Sh, Microsoft.Office.Interop.Excel.Range Target)
         {
             Log.Information("Application_SheetSelectionChange");
@@ -102,6 +140,11 @@ namespace Smart3DSpecWriter
 
         #endregion
 
+        /// <summary>
+        /// <para>Call BrowserControl's SetDetailInformation and SetDefinitionInformat</para>
+        /// <para>Set _detailInformationForCopy and _definitionInformatoinForCopy</para>
+        /// </summary>
+        /// <param name="Target">Selected Range</param>
         private void SheetSelectionChanged(Range Target)
         {
             if (_sheetInfo != null)
