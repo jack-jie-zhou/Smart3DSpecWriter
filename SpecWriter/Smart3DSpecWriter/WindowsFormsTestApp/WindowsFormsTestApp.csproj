@@ -286,12 +286,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CodelistLibrary\CodelistLibrary.csproj">
-      <Project>{452D4DAD-95BF-439B-B38E-20A0B611F471}</Project>
-      <Name>CodelistLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
