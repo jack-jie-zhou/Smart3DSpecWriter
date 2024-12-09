@@ -18,7 +18,7 @@
     <Name>Documentation</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.7.2</FrameworkVersion>
-    <OutputPath>.\Help\</OutputPath>
+    <OutputPath>..\..\..\SpecWriter\Help\</OutputPath>
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
     <DocumentationSources>
@@ -26,6 +26,7 @@
       <DocumentationSource sourceFile="..\Smart3DSpecWriter\Smart3DSpecWriter\Smart3DSpecWriter.csproj" />
     </DocumentationSources>
     <VisibleItems>Privates, PrivateFields, Protected, SealedProtected, ProtectedInternalAsProtected, NonBrowsable</VisibleItems>
+    <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
