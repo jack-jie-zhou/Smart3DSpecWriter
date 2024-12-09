@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.bnDBConnTest = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.bnSearch = new System.Windows.Forms.Button();
             this.dg1 = new System.Windows.Forms.DataGridView();
+            this.bnOpenSearchForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dg1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,16 +45,6 @@
             this.bnDBConnTest.Text = "Test Database Connection";
             this.bnDBConnTest.UseVisualStyleBackColor = true;
             this.bnDBConnTest.Click += new System.EventHandler(this.bnDBConnTest_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(53, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(281, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtSearch
             // 
@@ -89,6 +79,17 @@
             this.dg1.Size = new System.Drawing.Size(1044, 1142);
             this.dg1.TabIndex = 4;
             this.dg1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg1_CellClick);
+            this.dg1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg1_CellContentClick);
+            // 
+            // bnOpenSearchForm
+            // 
+            this.bnOpenSearchForm.Location = new System.Drawing.Point(72, 137);
+            this.bnOpenSearchForm.Name = "bnOpenSearchForm";
+            this.bnOpenSearchForm.Size = new System.Drawing.Size(205, 45);
+            this.bnOpenSearchForm.TabIndex = 5;
+            this.bnOpenSearchForm.Text = "Open Global Search Form";
+            this.bnOpenSearchForm.UseVisualStyleBackColor = true;
+            this.bnOpenSearchForm.Click += new System.EventHandler(this.bnOpenSearchForm_Click);
             // 
             // Form1
             // 
@@ -96,10 +97,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1533, 1270);
+            this.Controls.Add(this.bnOpenSearchForm);
             this.Controls.Add(this.dg1);
             this.Controls.Add(this.bnSearch);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.bnDBConnTest);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -113,10 +114,10 @@
         #endregion
 
         private System.Windows.Forms.Button bnDBConnTest;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button bnSearch;
         private System.Windows.Forms.DataGridView dg1;
+        private System.Windows.Forms.Button bnOpenSearchForm;
     }
 }
 

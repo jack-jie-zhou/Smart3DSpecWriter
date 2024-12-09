@@ -45,6 +45,7 @@
             // 
             // contextMenuStripDetailDataGrid
             // 
+            this.contextMenuStripDetailDataGrid.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStripDetailDataGrid.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemUpdate,
             this.toolStripSeparator1,
@@ -56,62 +57,64 @@
             this.toolStripSeparator3,
             this.toolStripMenuItemDisplaySymbolIcon});
             this.contextMenuStripDetailDataGrid.Name = "contextMenuStrip1";
-            this.contextMenuStripDetailDataGrid.Size = new System.Drawing.Size(182, 154);
+            this.contextMenuStripDetailDataGrid.Size = new System.Drawing.Size(247, 214);
             // 
             // toolStripMenuItemUpdate
             // 
             this.toolStripMenuItemUpdate.Name = "toolStripMenuItemUpdate";
-            this.toolStripMenuItemUpdate.Size = new System.Drawing.Size(181, 22);
+            this.toolStripMenuItemUpdate.Size = new System.Drawing.Size(246, 32);
             this.toolStripMenuItemUpdate.Text = "Update";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(243, 6);
             // 
             // toolStripMenuItemShortDesc
             // 
             this.toolStripMenuItemShortDesc.Name = "toolStripMenuItemShortDesc";
-            this.toolStripMenuItemShortDesc.Size = new System.Drawing.Size(181, 22);
+            this.toolStripMenuItemShortDesc.Size = new System.Drawing.Size(246, 32);
             this.toolStripMenuItemShortDesc.Text = "Short Description";
             // 
             // toolStripMenuItemLongDesc
             // 
             this.toolStripMenuItemLongDesc.Name = "toolStripMenuItemLongDesc";
-            this.toolStripMenuItemLongDesc.Size = new System.Drawing.Size(181, 22);
+            this.toolStripMenuItemLongDesc.Size = new System.Drawing.Size(246, 32);
             this.toolStripMenuItemLongDesc.Text = "Long Description";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(243, 6);
             // 
             // toolStripMenuItemHideEmpty
             // 
             this.toolStripMenuItemHideEmpty.Name = "toolStripMenuItemHideEmpty";
-            this.toolStripMenuItemHideEmpty.Size = new System.Drawing.Size(181, 22);
+            this.toolStripMenuItemHideEmpty.Size = new System.Drawing.Size(246, 32);
             this.toolStripMenuItemHideEmpty.Text = "Hide Empty Values";
             // 
             // toolStripMenuItemShowEmpty
             // 
             this.toolStripMenuItemShowEmpty.Name = "toolStripMenuItemShowEmpty";
-            this.toolStripMenuItemShowEmpty.Size = new System.Drawing.Size(181, 22);
+            this.toolStripMenuItemShowEmpty.Size = new System.Drawing.Size(246, 32);
             this.toolStripMenuItemShowEmpty.Text = "Show Empty Values";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(243, 6);
             // 
             // toolStripMenuItemDisplaySymbolIcon
             // 
             this.toolStripMenuItemDisplaySymbolIcon.Name = "toolStripMenuItemDisplaySymbolIcon";
-            this.toolStripMenuItemDisplaySymbolIcon.Size = new System.Drawing.Size(181, 22);
+            this.toolStripMenuItemDisplaySymbolIcon.Size = new System.Drawing.Size(246, 32);
             this.toolStripMenuItemDisplaySymbolIcon.Text = "Display Symbol Icon";
             // 
             // DetailDataGridView
             // 
             this.ContextMenuStrip = this.contextMenuStripDetailDataGrid;
+            this.RowTemplate.Height = 28;
+            this.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DetailDataGridView_CellDoubleClick);
             this.contextMenuStripDetailDataGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);

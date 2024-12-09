@@ -1,4 +1,5 @@
-﻿using Microsoft.Office.Interop.Excel;
+﻿using CodelistLibrary;
+using Microsoft.Office.Interop.Excel;
 using Smart3DSpecWriter.Excel;
 using Smart3DSpecWriter.Utilities;
 using System;
@@ -9,9 +10,16 @@ namespace Smart3DSpecWriter.Controls
 {
     public partial class DetailDataGridView : DataGridView
     {
+        /// <summary>
+        /// current worksheet
+        /// </summary>
         private Worksheet _sheet;
+
         private List<CellInfo> _list;
 
+        /// <summary>
+        /// This dataGridView has four columns: name, value, short, long
+        /// </summary>
         public DetailDataGridView()
         {
             InitializeComponent();
@@ -63,11 +71,13 @@ namespace Smart3DSpecWriter.Controls
 
         private void DetailDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
+            
             CellInfo cellInfo = CurrentCell.OwningRow.DataBoundItem as CellInfo;
             if (cellInfo.Value != _sheet.Cells[cellInfo.Row, cellInfo.Column].Value?.ToString())
             {
-
-                CurrentCell.Style.BackColor = System.Drawing.Color.Yellow;
+                Rows[CurrentCell.RowIndex].Cells[1].Style.BackColor = System.Drawing.Color.Yellow;
+                
+                //CurrentCell.Style.BackColor = System.Drawing.Color.Yellow;
                 _sheet.Cells[cellInfo.Row, cellInfo.Column].Value = CurrentCell.Value;
                 _sheet.Cells[cellInfo.Row, cellInfo.Column].Interior.Color = XlRgbColor.rgbGreenYellow;
             }
@@ -75,12 +85,41 @@ namespace Smart3DSpecWriter.Controls
 
         private void ToolStripMenuItemLongDesc_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            DataGridViewRow row;
+            for (int i = 0; i < Rows.Count - 1; i++)
+            {
+                row = Rows[i];
+                CodelistValueView x = CodelistUtilities.CodelistLookup((string)row.Cells[0].Value, (string)row.Cells[1].Value);
+                if (x != null)
+                {
+                    row.Cells[2].Value = x.LongStringValue;
+                }
+                else
+                {
+                    row.Cells[2].Value = "";
+                }
+            }
         }
 
         private void ToolStripMenuItemShortDesc_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            DataGridViewRow row;
+            for (int i = 0; i < Rows.Count - 1; i++)
+            {
+                row = Rows[i];
+                CodelistValueView x = CodelistUtilities.CodelistLookup((string)row.Cells[0].Value, (string)row.Cells[1].Value);
+                if (x != null)
+                {
+                    row.Cells[2].Value = x.ShortStringValue;
+                    row.Cells[3].Value = x.LongStringValue;
+                }
+                else
+                {
+                    row.Cells[2].Value = "";
+                    row.Cells[3].Value = "";
+                }
+            }
+            AutoResizeColumns();
         }
 
         private void ToolStripMenuItemUpdate_Click(object sender, EventArgs e)
@@ -138,7 +177,16 @@ namespace Smart3DSpecWriter.Controls
             {
                 DataPropertyName = "CodeList",
                 DisplayIndex = 2,
-                HeaderText = "Code List",
+                HeaderText = "Short",
+                //  AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
+                ReadOnly = true
+
+            };
+            DataGridViewTextBoxColumn CodeListLong = new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "CodeList",
+                DisplayIndex = 3,
+                HeaderText = "Long",
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
                 ReadOnly = true
 
@@ -146,6 +194,7 @@ namespace Smart3DSpecWriter.Controls
             Columns.Add(Name);
             Columns.Add(Value);
             Columns.Add(CodeList);
+            Columns.Add(CodeListLong);
         }
 
         internal void SetDataSource(List<CellInfo> cellInfoDetails, Worksheet sheet)
@@ -173,7 +222,32 @@ namespace Smart3DSpecWriter.Controls
             return list;
         }
 
+        private void DetailDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1) return;
+            string propertyName = Rows[e.RowIndex].Cells[0].Value.ToString();
+            string valueId = Rows[e.RowIndex].Cells[1].Value.ToString();
 
+            string clTablename = CodelistUtilities.GetCodelistTableName(propertyName);
+            if (string.IsNullOrWhiteSpace(clTablename) || string.IsNullOrWhiteSpace(valueId)) { return; }
 
+            List<CodelistValueView> valuelist = CodelistAPI.GetValueTreeFromTableNameAndValueId(clTablename,int.Parse(valueId));
+
+            var tablelist = CodelistAPI.GetTableTreeFromTableName(clTablename);
+            if (tablelist != null)
+            {
+                frmCodelist frm = new frmCodelist();
+                frm.populateTree(tablelist,clTablename,valuelist);
+                if (frm.ShowDialog() == DialogResult.OK)
+                {
+                    Rows[e.RowIndex].Cells[1].Value=frm.SelectedValue.ValueId;
+                    Rows[e.RowIndex].Cells[2].Value=frm.SelectedValue.ShortStringValue;
+                    Rows[e.RowIndex].Cells[3].Value=frm.SelectedValue.LongStringValue;
+                    Rows[e.RowIndex].Cells[0].Selected=true;
+                };
+            }
+            Refresh();
+            AutoResizeColumns();
+        }
     }
 }

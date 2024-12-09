@@ -47,7 +47,8 @@
             // 
             // dgTableValueList
             // 
-            this.dgTableValueList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgTableValueList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgTableValueList.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgTableValueList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgTableValueList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgTableValueList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -57,13 +58,15 @@
             this.dgTableValueList.RowHeadersVisible = false;
             this.dgTableValueList.RowHeadersWidth = 62;
             this.dgTableValueList.RowTemplate.Height = 28;
-            this.dgTableValueList.Size = new System.Drawing.Size(1225, 380);
+            this.dgTableValueList.Size = new System.Drawing.Size(1225, 180);
             this.dgTableValueList.TabIndex = 0;
             this.dgTableValueList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgTableValueList_CellClick);
+            this.dgTableValueList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgTableValueList_CellContentClick);
             // 
             // dgCurrentTable
             // 
-            this.dgCurrentTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgCurrentTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgCurrentTable.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgCurrentTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgCurrentTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgCurrentTable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -74,7 +77,7 @@
             this.dgCurrentTable.RowHeadersWidth = 62;
             this.dgCurrentTable.RowTemplate.Height = 28;
             this.dgCurrentTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgCurrentTable.Size = new System.Drawing.Size(1222, 331);
+            this.dgCurrentTable.Size = new System.Drawing.Size(1222, 538);
             this.dgCurrentTable.TabIndex = 1;
             this.dgCurrentTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCurrentTable_CellClick);
             // 
@@ -98,10 +101,12 @@
             this.bnOK.TabIndex = 3;
             this.bnOK.Text = "OK";
             this.bnOK.UseVisualStyleBackColor = true;
+            this.bnOK.Click += new System.EventHandler(this.bnOK_Click);
             // 
             // bnCancel
             // 
             this.bnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.bnCancel.Location = new System.Drawing.Point(1144, 809);
             this.bnCancel.Name = "bnCancel";
             this.bnCancel.Size = new System.Drawing.Size(96, 42);
@@ -116,7 +121,7 @@
             this.groupBoxTop.Controls.Add(this.dgTableValueList);
             this.groupBoxTop.Location = new System.Drawing.Point(12, 12);
             this.groupBoxTop.Name = "groupBoxTop";
-            this.groupBoxTop.Size = new System.Drawing.Size(1231, 405);
+            this.groupBoxTop.Size = new System.Drawing.Size(1231, 205);
             this.groupBoxTop.TabIndex = 5;
             this.groupBoxTop.TabStop = false;
             // 
@@ -126,9 +131,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxBottom.Controls.Add(this.dgCurrentTable);
-            this.groupBoxBottom.Location = new System.Drawing.Point(15, 432);
+            this.groupBoxBottom.Location = new System.Drawing.Point(15, 234);
             this.groupBoxBottom.Name = "groupBoxBottom";
-            this.groupBoxBottom.Size = new System.Drawing.Size(1228, 356);
+            this.groupBoxBottom.Size = new System.Drawing.Size(1228, 563);
             this.groupBoxBottom.TabIndex = 6;
             this.groupBoxBottom.TabStop = false;
             // 

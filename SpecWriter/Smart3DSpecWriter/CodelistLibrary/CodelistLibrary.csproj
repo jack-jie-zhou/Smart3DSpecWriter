@@ -219,15 +219,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Class1.cs" />
     <Compile Include="Classes\CodelistAPI.cs" />
+    <Compile Include="Classes\CodelistAPIBase.cs" />
     <Compile Include="Classes\CodelistTableInfoView.cs" />
+    <Compile Include="Classes\CodelistUtilities.cs" />
     <Compile Include="Classes\CodelistValueView.cs" />
     <Compile Include="Forms\frmCodelist.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmCodelist.Designer.cs">
       <DependentUpon>frmCodelist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGlobalSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGlobalSearch.Designer.cs">
+      <DependentUpon>frmGlobalSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -238,6 +245,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\frmCodelist.resx">
       <DependentUpon>frmCodelist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGlobalSearch.resx">
+      <DependentUpon>frmGlobalSearch.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

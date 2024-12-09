@@ -1,7 +1,11 @@
-﻿using Smart3DSpecWriter.Excel;
+﻿using CodelistLibrary;
+using Dapper;
+using Smart3DSpecWriter.Excel;
 using Smart3DSpecWriter.Forms;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SQLite;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,7 +17,7 @@ namespace Smart3DSpecWriter.Utilities
     /// <summary>
     /// Some helper functions
     /// </summary>
-    internal class CommonFunctions
+    public class CommonFunctions
     {
         /// <summary>
         /// Set the width of the Editor on the right
@@ -32,7 +36,7 @@ namespace Smart3DSpecWriter.Utilities
         /// <param name="rows">All rows in the Editor control</param>
         /// <param name="rowCount">Number of row</param>
         /// <param name="numberOfColumns">Number of columns to set color</param>
-        public static void Coloring(DataGridViewRowCollection rows, int rowCount,int numberOfColumns=2)
+        public static void Coloring(DataGridViewRowCollection rows, int rowCount, int numberOfColumns = 2)
         {
             for (int i = 0; i < rowCount; i++)
             {
@@ -56,7 +60,7 @@ namespace Smart3DSpecWriter.Utilities
                     cell.Style.BackColor = System.Drawing.Color.FromArgb(255, 255, 192);
                 }
                 rows[i].Cells[1].Style.BackColor = cell.Style.BackColor;
-                if(numberOfColumns==3)
+                if (numberOfColumns == 3)
                 {
                     rows[i].Cells[2].Style.BackColor = cell.Style.BackColor;
                 }
@@ -104,5 +108,9 @@ namespace Smart3DSpecWriter.Utilities
             };
             frm.Show();
         }
+
+
+
+
     }
 }

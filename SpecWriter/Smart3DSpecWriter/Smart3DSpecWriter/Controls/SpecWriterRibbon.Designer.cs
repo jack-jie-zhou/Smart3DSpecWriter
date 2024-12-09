@@ -52,6 +52,8 @@
             this.button4 = this.Factory.CreateRibbonButton();
             this.group6 = this.Factory.CreateRibbonGroup();
             this.button5 = this.Factory.CreateRibbonButton();
+            this.group7 = this.Factory.CreateRibbonGroup();
+            this.bnTest = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.group3.SuspendLayout();
@@ -60,6 +62,7 @@
             this.group4.SuspendLayout();
             this.group5.SuspendLayout();
             this.group6.SuspendLayout();
+            this.group7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
@@ -126,6 +129,7 @@
             this.tab2.Groups.Add(this.group4);
             this.tab2.Groups.Add(this.group5);
             this.tab2.Groups.Add(this.group6);
+            this.tab2.Groups.Add(this.group7);
             this.tab2.Label = "SP3D Spec Writer";
             this.tab2.Name = "tab2";
             // 
@@ -176,6 +180,18 @@
             this.button5.Label = "Editor";
             this.button5.Name = "button5";
             // 
+            // group7
+            // 
+            this.group7.Items.Add(this.bnTest);
+            this.group7.Label = "group7";
+            this.group7.Name = "group7";
+            // 
+            // bnTest
+            // 
+            this.bnTest.Label = "Test";
+            this.bnTest.Name = "bnTest";
+            this.bnTest.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.bnTest_Click);
+            // 
             // SpecWriterRibbon
             // 
             this.Name = "SpecWriterRibbon";
@@ -199,6 +215,8 @@
             this.group5.PerformLayout();
             this.group6.ResumeLayout(false);
             this.group6.PerformLayout();
+            this.group7.ResumeLayout(false);
+            this.group7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -223,6 +241,8 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button4;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group6;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button5;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group7;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton bnTest;
     }
 
     partial class ThisRibbonCollection

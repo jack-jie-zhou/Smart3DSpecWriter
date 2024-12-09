@@ -1,4 +1,5 @@
 ﻿using CodelistLibrary;
+using CodelistLibrary.Forms;
 using NinjaNye.SearchExtensions;
 using System;
 using System.Collections.Generic;
@@ -27,11 +28,14 @@ namespace WindowsFormsTestApp
 
 
             //CodelistValueView value = CodelistAPI.GetCLValueFromTableNameAndValueId("EquipmentTypes3", 325);
-            var tablelist = CodelistAPI.GetTableTreeFromTableName("SelectionBasis");
+
+            //var tablelist = CodelistAPI.GetTableTreeFromTableName("SelectionBasis");
+           // List<CodelistValueView> valuelist = CodelistAPI.GetValueTreeFromTableNameAndValueId("SelectionBasis", 75);
+
+            var tablelist = CodelistAPI.GetTableTreeFromTableName("PipingCommodityType");
 
             //  List<CodelistValueView> valuelist = CodelistAPI.GetValueTreeFromTableNameAndValueId("EquipmentTypes6", 495);
-            List<CodelistValueView> valuelist = CodelistAPI.GetValueTreeFromTableNameAndValueId("SelectionBasis", 75);
-            //List<CodelistValueView> valuelist = CodelistAPI.GetValueTreeFromTableNameAndValueId("EquipmentTypes6", 400);
+           List<CodelistValueView> valuelist = CodelistAPI.GetValueTreeFromTableNameAndValueId("PipingCommodityType", 460);
 
             //foreach (var y in x)
             //{
@@ -39,7 +43,7 @@ namespace WindowsFormsTestApp
             //}
 
             frmCodelist frm = new frmCodelist();
-            frm.populateTree(tablelist, valuelist);
+            frm.populateTree(tablelist, "PipingCommodityType",valuelist);
 
             frm.ShowDialog();
         }
@@ -69,7 +73,7 @@ namespace WindowsFormsTestApp
             list.Add("gate");
             list.Add("DIN");
 
-            var results = CodelistAPI._getValueList("select * from CodelistValueView")
+            var results = CodelistAPI.GetValueList("select * from CodelistValueView")
                 .Search(x => x.LongStringValue, x => x.ShortStringValue, x => x.TableName)
                 .SetCulture(StringComparison.CurrentCultureIgnoreCase)
                 .ContainingAll(words)
@@ -105,12 +109,21 @@ namespace WindowsFormsTestApp
 
             List<CodelistValueView> valuelist = CodelistAPI.GetValueTreeFromTableNameAndValueId(tableName, valueId);
             frmCodelist frm = new frmCodelist();
-            frm.populateTree(tablelist, valuelist);
+            frm.populateTree(tablelist, tableName, valuelist);
 
             frm.ShowDialog();
         }
 
+        private void dg1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void bnOpenSearchForm_Click(object sender, EventArgs e)
+        {
+            frmGlobalSearch frm = new frmGlobalSearch();
+            frm.ShowDialog(this);
+        }
     }
 }
 

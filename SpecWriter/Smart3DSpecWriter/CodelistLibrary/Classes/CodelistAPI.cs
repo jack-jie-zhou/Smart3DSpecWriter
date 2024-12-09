@@ -7,86 +7,100 @@ using System.Configuration;
 
 namespace CodelistLibrary
 {
+    /// <summary>
+    /// Get connection to CDB.db
+    /// </summary>
     public class ConnStr
     {
+        /// <summary>
+        /// Return connection string value of "YourConnectionStringName"
+        /// </summary>
+        /// <returns></returns>
         static public string Str()
         {
             return ConfigurationManager.ConnectionStrings["YourConnectionStringName"].ConnectionString;
         }
     }
 
-    public class CodelistAPI
+    /// <summary>
+    /// Codelist API
+    /// </summary>
+    public class CodelistAPI : CodelistAPIBase
     {
-        static List<CodelistTableInfoView> _getTableList(string sql)
-        {
-            List<CodelistTableInfoView> tables = new List<CodelistTableInfoView>();
-            using (IDbConnection db = new SQLiteConnection(ConnStr.Str()))
-            {
-                return db.Query<CodelistTableInfoView>(sql).ToList();
-            }
-        }
-
-        static public List<CodelistValueView> _getValueList(string sql)
-        {
-            List<CodelistValueView> tables = new List<CodelistValueView>();
-            using (IDbConnection db = new SQLiteConnection(ConnStr.Str()))
-            {
-                return db.Query<CodelistValueView>(sql).ToList();
-            }
-        }
-
-        static CodelistValueView _getValue(string sql)
-        {
-            using (IDbConnection db = new SQLiteConnection(ConnStr.Str()))
-            {
-                var x =db.Query<CodelistValueView>(sql).FirstOrDefault();
-                return x;
-            }
-        }
-        static CodelistTableInfoView _getTable(string sql)
-        {
-            using (IDbConnection db = new SQLiteConnection(ConnStr.Str()))
-            {
-                return db.Query<CodelistTableInfoView>(sql).FirstOrDefault();
-            }
-        }
+        /// <summary>
+        /// Return tables with ParentTableID='00000000-0000-0000-0000-000000000000'
+        /// </summary>
+        /// <returns>list of tables</returns>
         static public List<CodelistTableInfoView> GetTopLevelTables()
         {
             string sql = "select * from CodelistTableInfoView where ParentTableID='00000000-0000-0000-0000-000000000000'";
 
 
-            return _getTableList(sql);
+            return GetTableList(sql);
         }
 
+        /// <summary>
+        /// return value by tableName and valueID
+        /// </summary>
+        /// <param name="tableName">table name</param>
+        /// <param name="valueId">valueId</param>
+        /// <returns>codelist value</returns>
         static public CodelistValueView GetValueFromTableNameAndValueId(string tableName, int valueId)
         {
             string sql = $"select * from CodelistValueView where TableName='{tableName}' and ValueID={valueId}";
-            return _getValue(sql);
+            return GetValue(sql);
         }
+
+        /// <summary>
+        /// return A table by tablename
+        /// </summary>
+        /// <param name="tablename">table name</param>
+        /// <returns>return table</returns>
         static public CodelistTableInfoView GetTableFromTablename(string tablename)
         {
             string sql = $"select * from CodelistTableInfoView where Name ='{tablename}'";
-            return _getTable(sql);
+            return GetTable(sql);
         }
 
+
+        /// <summary>
+        /// get parent table from tablename
+        /// </summary>
+        /// <param name="tablename">table name</param>
+        /// <returns>parent table</returns>
         static public CodelistTableInfoView GetParentTableFromTablename(string tablename)
         {
             string sql = $"select * from CodelistTableInfoView where ChildTableName ='{tablename}'";
-            return _getTable(sql);
+            return GetTable(sql);
         }
 
+        /// <summary>
+        /// Get table by ParentTableName ='{tablename}'
+        /// </summary>
+        /// <param name="tablename">table name</param>
+        /// <returns>table</returns>
         static public CodelistTableInfoView GetChildrenTableFromTablename(string tablename)
         {
             string sql = $"select * from CodelistTableInfoView where ParentTableName ='{tablename}'";
-            return _getTable(sql);
+            return GetTable(sql);
         }
 
+        /// <summary>
+        /// Get values of a table by "tablename"
+        /// </summary>
+        /// <param name="tableName"></param>
+        /// <returns></returns>
         static public List<CodelistValueView> GetValueListFromTablename(string tableName)
         {
             string sql = $"select * from CodelistValueView where TableName ='{tableName}'";
-            return _getValueList(sql);
+            return GetValueList(sql);
         }
 
+        /// <summary>
+        /// Get all parent tables and children tables of current table by tablename
+        /// </summary>
+        /// <param name="tableName">tablename</param>
+        /// <returns>list of tables from top to bottom</returns>
         static public List<CodelistTableInfoView> GetTableTreeFromTableName(string tableName)
         {
             LinkedList<CodelistTableInfoView> linkedList = new LinkedList<CodelistTableInfoView>();
@@ -127,6 +141,13 @@ namespace CodelistLibrary
             return new List<CodelistTableInfoView>(linkedList);
 
         }
+
+        /// <summary>
+        /// Get list values from top to bottom tables with current table name and valueId
+        /// </summary>
+        /// <param name="tableName">table name</param>
+        /// <param name="valueId">valueId</param>
+        /// <returns></returns>
         static public List<CodelistValueView> GetValueTreeFromTableNameAndValueId(string tableName, int valueId)
         {
             LinkedList<CodelistValueView> linkedList = new LinkedList<CodelistValueView>();

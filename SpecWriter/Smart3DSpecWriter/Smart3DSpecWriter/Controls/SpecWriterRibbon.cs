@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using CodelistLibrary;
 using Microsoft.Office.Interop.Excel;
 using Microsoft.Office.Tools.Ribbon;
 using Smart3DSpecWriter.Forms;
@@ -49,12 +50,12 @@ namespace Smart3DSpecWriter
 
         private void bnReadPipeBranch_Click(object sender, RibbonControlEventArgs e)
         {
-            
-        //   Worksheet _sheet = Globals.Smart3DAddIn.Application.ActiveSheet;
-        //    PipeBranchSheet pbs = new PipeBranchSheet(_sheet);
 
-        //ReadPipeBranchTable.GenerateTemporaryPipeBranchSheet();
-        //    //  ReadPipeBranchTable.MakeSelection();
+            //   Worksheet _sheet = Globals.Smart3DAddIn.Application.ActiveSheet;
+            //    PipeBranchSheet pbs = new PipeBranchSheet(_sheet);
+
+            //ReadPipeBranchTable.GenerateTemporaryPipeBranchSheet();
+            //    //  ReadPipeBranchTable.MakeSelection();
 
             ReadPipeBranchTable.ReadSheet();
         }
@@ -97,6 +98,12 @@ namespace Smart3DSpecWriter
         {
             ReadPipeBranchTable.ReadSheet();
 
+        }
+
+        private void bnTest_Click(object sender, RibbonControlEventArgs e)
+        {
+            var x = CodelistUtilities.GetCodelistTableName("GeometryType");
+            var y = CodelistUtilities.GetCodelistTableName("CommodityType");
         }
     }
 }
