@@ -8,6 +8,9 @@ using System.Windows.Forms;
 
 namespace Smart3DSpecWriter.Controls
 {
+    /// <summary>
+    /// DataGridView used to display detail section of worksheet row
+    /// </summary>
     public partial class DetailDataGridView : DataGridView
     {
         /// <summary>
@@ -15,7 +18,15 @@ namespace Smart3DSpecWriter.Controls
         /// </summary>
         private Worksheet _sheet;
 
+        /// <summary>
+        /// List of cells information in current
+        /// </summary>
         private List<CellInfo> _list;
+
+        /// <summary>
+        /// PartClassType
+        /// </summary>
+        private string _partClassType;
 
         /// <summary>
         /// This dataGridView has four columns: name, value, short, long
@@ -26,6 +37,9 @@ namespace Smart3DSpecWriter.Controls
             RegisterEventHandlers();
         }
         #region "Events"
+        /// <summary>
+        /// register event handlers
+        /// </summary>
         private void RegisterEventHandlers()
         {
             toolStripMenuItemHideEmpty.Click += ToolStripMenuItemHideEmpty_Click;
@@ -37,48 +51,30 @@ namespace Smart3DSpecWriter.Controls
             CellValueChanged += DetailDataGridView_CellValueChanged;
         }
 
+        /// <summary>
+        /// Display icon
+        /// </summary>
+        /// <param name="sender">-</param>
+        /// <param name="e">-</param>
         private void ToolStripMenuItemDisplaySymbolIcon_Click(object sender, EventArgs e)
         {
             CommonFunctions.DisplayIcon(_list);
-            //string iconName = "";
-            //for (int i = 0; i < _list.Count; i++)
-            //{
-            //    if (_list[i].Name == "SymbolIcon")
-            //    {
-            //        iconName = _list[i].Value;
-            //        break;
-            //    }
-            //}
-
-            //if (iconName == "")
-            //{
-            //    MessageBox.Show("No symbolIcon value is provided in the worksheet");
-            //    return;
-            //}
-
-            //if (string.IsNullOrWhiteSpace(Properties.Settings.Default.IConPath))
-            //{
-            //    MessageBox.Show("Please set up symbol path first!");
-            //    return;
-            //}
-            //string fileName = Properties.Settings.Default.IConPath + "\\" + iconName;
-
-            //DisplayIconForm frm = new DisplayIconForm();
-            //frm.FileName = fileName;
-            //frm.TopMost = true;
-            //frm.Show();
         }
 
+        /// <summary>
+        /// Update the data on the worksheet with the data from the DetailDataGridView 
+        /// </summary>
+        /// <param name="sender">-</param>
+        /// <param name="e">-</param>
         private void DetailDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            
             CellInfo cellInfo = CurrentCell.OwningRow.DataBoundItem as CellInfo;
             if (cellInfo.Value != _sheet.Cells[cellInfo.Row, cellInfo.Column].Value?.ToString())
             {
                 Rows[CurrentCell.RowIndex].Cells[1].Style.BackColor = System.Drawing.Color.Yellow;
-                
-                //CurrentCell.Style.BackColor = System.Drawing.Color.Yellow;
-                _sheet.Cells[cellInfo.Row, cellInfo.Column].Value = CurrentCell.Value;
+
+                //Update the cell on the worksheet with the data of current on column 1(value)
+                _sheet.Cells[cellInfo.Row, cellInfo.Column].Value = Rows[CurrentCell.RowIndex].Cells[1].Value;
                 _sheet.Cells[cellInfo.Row, cellInfo.Column].Interior.Color = XlRgbColor.rgbGreenYellow;
             }
         }
@@ -103,6 +99,15 @@ namespace Smart3DSpecWriter.Controls
 
         private void ToolStripMenuItemShortDesc_Click(object sender, EventArgs e)
         {
+            /*
+             1. Get the propertyName, partClassType 
+             2. Get codelist table name and byShortDesc
+             3. lookup for codelist value by using tablename and valudId/shortDesc
+             4. populate the row with codelist value record
+             
+             */
+
+
             DataGridViewRow row;
             for (int i = 0; i < Rows.Count - 1; i++)
             {
@@ -197,10 +202,18 @@ namespace Smart3DSpecWriter.Controls
             Columns.Add(CodeListLong);
         }
 
-        internal void SetDataSource(List<CellInfo> cellInfoDetails, Worksheet sheet)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cellInfoDetails"></param>
+        /// <param name="sheet"></param>
+        /// <param name="partClassType"></param>
+        /// <exception cref="ArgumentNullException"></exception>
+        internal void SetDataSource(List<CellInfo> cellInfoDetails, Worksheet sheet, string partClassType)
         {
             _sheet = sheet ?? throw new ArgumentNullException(nameof(sheet));
             _list = cellInfoDetails;
+            _partClassType = partClassType;
             DataViewGridSettings();
             DataSource = null;
             DataSource = cellInfoDetails;
@@ -208,6 +221,10 @@ namespace Smart3DSpecWriter.Controls
             CommonFunctions.Coloring(Rows, RowCount, 3);
         }
 
+        /// <summary>
+        /// Build a new list with all its items are non empty, and return the new list
+        /// </summary>
+        /// <returns>new list with all items are non-empty</returns>
         private List<CellInfo> NoneEmptyList()
         {
             List<CellInfo> list = new List<CellInfo>();
@@ -222,28 +239,52 @@ namespace Smart3DSpecWriter.Controls
             return list;
         }
 
+        /// <summary>
+        /// Open codelist form for selection, Replace the values of current selected row with the data selected from the form.
+        /// </summary>
+        /// <param name="sender">-</param>
+        /// <param name="e">-</param>
         private void DetailDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex == -1) return;
+            if (e.RowIndex == -1 && e.ColumnIndex!=1) return;
             string propertyName = Rows[e.RowIndex].Cells[0].Value.ToString();
-            string valueId = Rows[e.RowIndex].Cells[1].Value.ToString();
+            string valueRaw = Rows[e.RowIndex].Cells[1].Value.ToString();
 
-            string clTablename = CodelistUtilities.GetCodelistTableName(propertyName);
-            if (string.IsNullOrWhiteSpace(clTablename) || string.IsNullOrWhiteSpace(valueId)) { return; }
+            bool byShortDesc;
+            string clTablename;
 
-            List<CodelistValueView> valuelist = CodelistAPI.GetValueTreeFromTableNameAndValueId(clTablename,int.Parse(valueId));
+            (clTablename, byShortDesc) = CodelistUtilities.GetCodelistTableName(propertyName, _partClassType);
+            if (string.IsNullOrWhiteSpace(clTablename)) { return; }
+
+            List<CodelistValueView> valuelist;
+
+            if (byShortDesc == true)
+            {
+                valuelist = CodelistAPI.GetValueTreeFromTableNameAndShortStringValue(clTablename, valueRaw);
+            }
+            else
+            {
+                valuelist = CodelistAPI.GetValueTreeFromTableNameAndValueId(clTablename, int.Parse(valueRaw));
+            }
 
             var tablelist = CodelistAPI.GetTableTreeFromTableName(clTablename);
             if (tablelist != null)
             {
                 frmCodelist frm = new frmCodelist();
-                frm.populateTree(tablelist,clTablename,valuelist);
+                frm.populateTree(tablelist, clTablename, valuelist);
                 if (frm.ShowDialog() == DialogResult.OK)
                 {
-                    Rows[e.RowIndex].Cells[1].Value=frm.SelectedValue.ValueId;
-                    Rows[e.RowIndex].Cells[2].Value=frm.SelectedValue.ShortStringValue;
-                    Rows[e.RowIndex].Cells[3].Value=frm.SelectedValue.LongStringValue;
-                    Rows[e.RowIndex].Cells[0].Selected=true;
+                    if (byShortDesc == true)
+                    {
+                        Rows[e.RowIndex].Cells[1].Value = frm.SelectedValue.ShortStringValue;
+                    }
+                    else
+                    {
+                        Rows[e.RowIndex].Cells[1].Value = frm.SelectedValue.ValueId;
+                    };
+                    Rows[e.RowIndex].Cells[2].Value = frm.SelectedValue.ShortStringValue;
+                    Rows[e.RowIndex].Cells[3].Value = frm.SelectedValue.LongStringValue;
+                    Rows[e.RowIndex].Cells[0].Selected = true;
                 };
             }
             Refresh();

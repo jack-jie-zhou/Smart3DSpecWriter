@@ -156,7 +156,7 @@ namespace Smart3DSpecWriter
                 List<CellInfo> cellInfos = _sheetInfo.ReadDetailsRow(row);
                 if (cellInfos != null && _browserControl != null)
                 {
-                    _browserControl.SetDetailInformation(cellInfos,_sheet);
+                    _browserControl.SetDetailInformation(cellInfos,_sheet,_sheetInfo.PartClassType);
                     _detailInformationForCopy = cellInfos;
                     _definitionInformationForCopy = null;
                 }
@@ -192,7 +192,7 @@ namespace Smart3DSpecWriter
                 List<CellInfo> cellInfoDetails = _sheetInfo.DetailTitleRowInformation;
                 if (cellInfoDetails != null)
                 {
-                    _browserControl.SetDetailInformation(cellInfoDetails,_sheet);
+                    _browserControl.SetDetailInformation(cellInfoDetails,_sheet, _sheetInfo.PartClassType);
                     _detailInformationForCopy = cellInfoDetails;
                 }
             }

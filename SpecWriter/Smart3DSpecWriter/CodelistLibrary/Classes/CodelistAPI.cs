@@ -52,6 +52,18 @@ namespace CodelistLibrary
         }
 
         /// <summary>
+        /// return value by table name and short string value
+        /// </summary>
+        /// <param name="tableName">-</param>
+        /// <param name="value">-</param>
+        /// <returns>-</returns>
+        static public CodelistValueView GetValueFromTableNameAndShortStringValue(string tableName, string value)
+        {
+            string sql = $"select * from CodelistValueView where TableName='{tableName}' and ShortStringValue='{value}'";
+            return GetValue(sql);
+        }
+
+        /// <summary>
         /// return A table by tablename
         /// </summary>
         /// <param name="tablename">table name</param>
@@ -162,6 +174,39 @@ namespace CodelistLibrary
             {
                 CodelistValueView parentValue = GetValueFromTableNameAndValueId(currentValue.ParentTableName, currentValue.ParentValueId);
                 if(parentValue != null)
+                {
+                    LinkedListNode<CodelistValueView> currentNode = linkedList.Find(currentValue);
+                    linkedList.AddBefore(currentNode, parentValue);
+                }
+                else
+                {
+                    break;
+                }
+                currentValue = parentValue;
+            }
+
+            return new List<CodelistValueView>(linkedList);
+        }
+        /// <summary>
+        /// Get list values from top to bottom tables with current table name and valueId
+        /// </summary>
+        /// <param name="tableName">-</param>
+        /// <param name="value">-</param>
+        /// <returns>-</returns>
+        static public List<CodelistValueView> GetValueTreeFromTableNameAndShortStringValue(string tableName, string value)
+        {
+            LinkedList<CodelistValueView> linkedList = new LinkedList<CodelistValueView>();
+            CodelistValueView currentValue = GetValueFromTableNameAndShortStringValue(tableName, value);
+            if (currentValue == null) return null;
+
+            linkedList.AddLast(currentValue);
+            //this is for adding children of current to the linked list
+            LinkedListNode<CodelistValueView> childNode = linkedList.Find(currentValue);
+
+            while (currentValue != null)
+            {
+                CodelistValueView parentValue = GetValueFromTableNameAndValueId(currentValue.ParentTableName, currentValue.ParentValueId);
+                if (parentValue != null)
                 {
                     LinkedListNode<CodelistValueView> currentNode = linkedList.Find(currentValue);
                     linkedList.AddBefore(currentNode, parentValue);

@@ -63,9 +63,10 @@ namespace Smart3DSpecWriter
         /// </summary>
         /// <param name="cellInfoDetails"></param>
         /// <param name="sheet"></param>
-        internal void SetDetailInformation(List<CellInfo> cellInfoDetails,Worksheet sheet)
+        /// <param name="partClassType">-</param>
+        internal void SetDetailInformation(List<CellInfo> cellInfoDetails,Worksheet sheet, string partClassType)
         {
-            detailDataGridView1.SetDataSource(cellInfoDetails,sheet);
+            detailDataGridView1.SetDataSource(cellInfoDetails,sheet,partClassType);
         }
 
         /// <summary>
