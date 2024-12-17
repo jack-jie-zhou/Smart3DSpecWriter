@@ -105,5 +105,11 @@ namespace Smart3DSpecWriter
             var x = CodelistUtilities.GetCodelistTableName("GeometryType");
             var y = CodelistUtilities.GetCodelistTableName("CommodityType");
         }
+
+        private void button2_Click(object sender, RibbonControlEventArgs e)
+        {
+            var frm = new frmGlobalSettings();
+            frm.ShowDialog();
+        }
     }
 }

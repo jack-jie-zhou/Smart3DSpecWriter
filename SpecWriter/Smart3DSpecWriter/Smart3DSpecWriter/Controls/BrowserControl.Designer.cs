@@ -31,24 +31,28 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabData = new System.Windows.Forms.TabPage();
-            this.detailDataGridView1 = new Smart3DSpecWriter.Controls.DetailDataGridView();
             this.tabDef = new System.Windows.Forms.TabPage();
-            this.definitionDataGridView1 = new Smart3DSpecWriter.Controls.DefinitionDataGridView();
             this.tabSheet = new System.Windows.Forms.TabPage();
             this.lstSheetNameList = new System.Windows.Forms.ListBox();
             this.tabSheetCategory = new System.Windows.Forms.TabPage();
+            this.tabPageBranchTable = new System.Windows.Forms.TabPage();
             this.contextMenuStripBrowser = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.wideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.narrowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPageBranchTable = new System.Windows.Forms.TabPage();
+            this.detailDataGridView1 = new Smart3DSpecWriter.Controls.DetailDataGridView();
+            this.definitionDataGridView1 = new Smart3DSpecWriter.Controls.DefinitionDataGridView();
+            this.txtSheetListFilter = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.bnSheetlistFilterApple = new System.Windows.Forms.Button();
+            this.bnSheetlistFilterClear = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.detailDataGridView1)).BeginInit();
             this.tabDef.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.definitionDataGridView1)).BeginInit();
             this.tabSheet.SuspendLayout();
             this.contextMenuStripBrowser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.detailDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.definitionDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -60,60 +64,49 @@
             this.tabControl1.Controls.Add(this.tabPageBranchTable);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.ShowToolTips = true;
-            this.tabControl1.Size = new System.Drawing.Size(507, 822);
+            this.tabControl1.Size = new System.Drawing.Size(760, 1265);
             this.tabControl1.TabIndex = 0;
             // 
             // tabData
             // 
             this.tabData.Controls.Add(this.detailDataGridView1);
-            this.tabData.Location = new System.Drawing.Point(4, 22);
+            this.tabData.Location = new System.Drawing.Point(4, 29);
+            this.tabData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabData.Name = "tabData";
-            this.tabData.Padding = new System.Windows.Forms.Padding(3);
-            this.tabData.Size = new System.Drawing.Size(499, 796);
+            this.tabData.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabData.Size = new System.Drawing.Size(752, 1232);
             this.tabData.TabIndex = 0;
             this.tabData.Text = "Data";
             this.tabData.ToolTipText = "Detail";
             this.tabData.UseVisualStyleBackColor = true;
             // 
-            // detailDataGridView1
-            // 
-            this.detailDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.detailDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.detailDataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.detailDataGridView1.Name = "detailDataGridView1";
-            this.detailDataGridView1.Size = new System.Drawing.Size(493, 790);
-            this.detailDataGridView1.TabIndex = 0;
-            // 
             // tabDef
             // 
             this.tabDef.Controls.Add(this.definitionDataGridView1);
-            this.tabDef.Location = new System.Drawing.Point(4, 22);
+            this.tabDef.Location = new System.Drawing.Point(4, 29);
+            this.tabDef.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabDef.Name = "tabDef";
-            this.tabDef.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDef.Size = new System.Drawing.Size(499, 796);
+            this.tabDef.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabDef.Size = new System.Drawing.Size(752, 1232);
             this.tabDef.TabIndex = 1;
             this.tabDef.Text = "Def";
             this.tabDef.ToolTipText = "Definition";
             this.tabDef.UseVisualStyleBackColor = true;
             // 
-            // definitionDataGridView1
-            // 
-            this.definitionDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.definitionDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.definitionDataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.definitionDataGridView1.Name = "definitionDataGridView1";
-            this.definitionDataGridView1.Size = new System.Drawing.Size(493, 790);
-            this.definitionDataGridView1.TabIndex = 0;
-            // 
             // tabSheet
             // 
+            this.tabSheet.Controls.Add(this.bnSheetlistFilterClear);
+            this.tabSheet.Controls.Add(this.bnSheetlistFilterApple);
+            this.tabSheet.Controls.Add(this.txtSheetListFilter);
             this.tabSheet.Controls.Add(this.lstSheetNameList);
-            this.tabSheet.Location = new System.Drawing.Point(4, 22);
+            this.tabSheet.Location = new System.Drawing.Point(4, 29);
+            this.tabSheet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabSheet.Name = "tabSheet";
-            this.tabSheet.Size = new System.Drawing.Size(499, 796);
+            this.tabSheet.Size = new System.Drawing.Size(752, 1232);
             this.tabSheet.TabIndex = 2;
             this.tabSheet.Text = "Sheets";
             this.tabSheet.ToolTipText = "Excel Sheets";
@@ -121,79 +114,145 @@
             // 
             // lstSheetNameList
             // 
-            this.lstSheetNameList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstSheetNameList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lstSheetNameList.FormattingEnabled = true;
-            this.lstSheetNameList.Location = new System.Drawing.Point(0, 0);
+            this.lstSheetNameList.ItemHeight = 20;
+            this.lstSheetNameList.Location = new System.Drawing.Point(0, 60);
+            this.lstSheetNameList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lstSheetNameList.Name = "lstSheetNameList";
-            this.lstSheetNameList.Size = new System.Drawing.Size(499, 796);
+            this.lstSheetNameList.Size = new System.Drawing.Size(746, 1144);
             this.lstSheetNameList.TabIndex = 0;
             this.lstSheetNameList.SelectedIndexChanged += new System.EventHandler(this.lstSheetNameList_SelectedIndexChanged);
             // 
             // tabSheetCategory
             // 
-            this.tabSheetCategory.Location = new System.Drawing.Point(4, 22);
+            this.tabSheetCategory.Location = new System.Drawing.Point(4, 29);
+            this.tabSheetCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabSheetCategory.Name = "tabSheetCategory";
-            this.tabSheetCategory.Size = new System.Drawing.Size(499, 796);
+            this.tabSheetCategory.Size = new System.Drawing.Size(752, 1232);
             this.tabSheetCategory.TabIndex = 3;
             this.tabSheetCategory.Text = "SC";
             this.tabSheetCategory.ToolTipText = "Shett Categories";
             this.tabSheetCategory.UseVisualStyleBackColor = true;
             // 
+            // tabPageBranchTable
+            // 
+            this.tabPageBranchTable.Location = new System.Drawing.Point(4, 29);
+            this.tabPageBranchTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPageBranchTable.Name = "tabPageBranchTable";
+            this.tabPageBranchTable.Size = new System.Drawing.Size(752, 1232);
+            this.tabPageBranchTable.TabIndex = 4;
+            this.tabPageBranchTable.Text = "BR";
+            this.tabPageBranchTable.ToolTipText = "Pipe Branch Table";
+            this.tabPageBranchTable.UseVisualStyleBackColor = true;
+            // 
             // contextMenuStripBrowser
             // 
+            this.contextMenuStripBrowser.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStripBrowser.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.wideToolStripMenuItem,
             this.regularToolStripMenuItem,
             this.narrowToolStripMenuItem});
             this.contextMenuStripBrowser.Name = "contextMenuStripBrowser";
-            this.contextMenuStripBrowser.Size = new System.Drawing.Size(115, 70);
+            this.contextMenuStripBrowser.Size = new System.Drawing.Size(144, 100);
             // 
             // wideToolStripMenuItem
             // 
             this.wideToolStripMenuItem.Name = "wideToolStripMenuItem";
-            this.wideToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.wideToolStripMenuItem.Size = new System.Drawing.Size(143, 32);
             this.wideToolStripMenuItem.Text = "Wide";
             this.wideToolStripMenuItem.Click += new System.EventHandler(this.wideToolStripMenuItem_Click);
             // 
             // regularToolStripMenuItem
             // 
             this.regularToolStripMenuItem.Name = "regularToolStripMenuItem";
-            this.regularToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.regularToolStripMenuItem.Size = new System.Drawing.Size(143, 32);
             this.regularToolStripMenuItem.Text = "Regular";
             this.regularToolStripMenuItem.Click += new System.EventHandler(this.regularToolStripMenuItem_Click);
             // 
             // narrowToolStripMenuItem
             // 
             this.narrowToolStripMenuItem.Name = "narrowToolStripMenuItem";
-            this.narrowToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.narrowToolStripMenuItem.Size = new System.Drawing.Size(143, 32);
             this.narrowToolStripMenuItem.Text = "Narrow";
             this.narrowToolStripMenuItem.Click += new System.EventHandler(this.narrowToolStripMenuItem_Click);
             // 
-            // tabPageBranchTable
+            // detailDataGridView1
             // 
-            this.tabPageBranchTable.Location = new System.Drawing.Point(4, 22);
-            this.tabPageBranchTable.Name = "tabPageBranchTable";
-            this.tabPageBranchTable.Size = new System.Drawing.Size(499, 796);
-            this.tabPageBranchTable.TabIndex = 4;
-            this.tabPageBranchTable.Text = "BR";
-            this.tabPageBranchTable.ToolTipText = "Pipe Branch Table";
-            this.tabPageBranchTable.UseVisualStyleBackColor = true;
+            this.detailDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.detailDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.detailDataGridView1.Location = new System.Drawing.Point(4, 5);
+            this.detailDataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.detailDataGridView1.Name = "detailDataGridView1";
+            this.detailDataGridView1.RowHeadersWidth = 62;
+            this.detailDataGridView1.Size = new System.Drawing.Size(744, 1222);
+            this.detailDataGridView1.TabIndex = 0;
+            // 
+            // definitionDataGridView1
+            // 
+            this.definitionDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.definitionDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.definitionDataGridView1.Location = new System.Drawing.Point(4, 5);
+            this.definitionDataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.definitionDataGridView1.Name = "definitionDataGridView1";
+            this.definitionDataGridView1.RowHeadersWidth = 62;
+            this.definitionDataGridView1.Size = new System.Drawing.Size(744, 1222);
+            this.definitionDataGridView1.TabIndex = 0;
+            // 
+            // txtSheetListFilter
+            // 
+            this.txtSheetListFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSheetListFilter.Location = new System.Drawing.Point(17, 20);
+            this.txtSheetListFilter.Name = "txtSheetListFilter";
+            this.txtSheetListFilter.Size = new System.Drawing.Size(112, 30);
+            this.txtSheetListFilter.TabIndex = 1;
+            this.txtSheetListFilter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSheetListFilter_KeyDown);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // bnSheetlistFilterApple
+            // 
+            this.bnSheetlistFilterApple.Location = new System.Drawing.Point(153, 17);
+            this.bnSheetlistFilterApple.Name = "bnSheetlistFilterApple";
+            this.bnSheetlistFilterApple.Size = new System.Drawing.Size(99, 36);
+            this.bnSheetlistFilterApple.TabIndex = 2;
+            this.bnSheetlistFilterApple.Text = "Filter";
+            this.bnSheetlistFilterApple.UseVisualStyleBackColor = true;
+            this.bnSheetlistFilterApple.Click += new System.EventHandler(this.bnSheetlistFilterApple_Click);
+            // 
+            // bnSheetlistFilterClear
+            // 
+            this.bnSheetlistFilterClear.Location = new System.Drawing.Point(269, 18);
+            this.bnSheetlistFilterClear.Name = "bnSheetlistFilterClear";
+            this.bnSheetlistFilterClear.Size = new System.Drawing.Size(88, 34);
+            this.bnSheetlistFilterClear.TabIndex = 3;
+            this.bnSheetlistFilterClear.Text = "Clear";
+            this.bnSheetlistFilterClear.UseVisualStyleBackColor = true;
+            this.bnSheetlistFilterClear.Click += new System.EventHandler(this.bnSheetlistFilterClear_Click);
             // 
             // BrowserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ContextMenuStrip = this.contextMenuStripBrowser;
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BrowserControl";
-            this.Size = new System.Drawing.Size(507, 822);
+            this.Size = new System.Drawing.Size(760, 1265);
             this.tabControl1.ResumeLayout(false);
             this.tabData.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.detailDataGridView1)).EndInit();
             this.tabDef.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.definitionDataGridView1)).EndInit();
             this.tabSheet.ResumeLayout(false);
+            this.tabSheet.PerformLayout();
             this.contextMenuStripBrowser.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.detailDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.definitionDataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,5 +272,9 @@
         private System.Windows.Forms.ToolStripMenuItem regularToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem narrowToolStripMenuItem;
         private System.Windows.Forms.TabPage tabPageBranchTable;
+        private System.Windows.Forms.Button bnSheetlistFilterClear;
+        private System.Windows.Forms.Button bnSheetlistFilterApple;
+        private System.Windows.Forms.TextBox txtSheetListFilter;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

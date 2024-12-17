@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using System.Windows.Forms;
+using Serilog;
+
 
 namespace CodelistLibrary
 {
@@ -73,7 +75,7 @@ namespace CodelistLibrary
                 List<(string, bool)> records = db.Query<(string, bool)>(sql).ToList();
 
                 //2
-                if (records.Count == 1 ) { return records[0]; }
+                if (records.Count == 1) { return records[0]; }
 
                 //3
                 if (records.Count > 1)
@@ -87,14 +89,15 @@ namespace CodelistLibrary
                     }
 
                     //4
-                    MessageBox.Show($"Find multiple records with propertyName={propertyName} but none of them contains partClassType={partClassType}");
+                    Log.Information($"Find multiple records with propertyName={propertyName} but none of them contains partClassType={partClassType}");
+                   // MessageBox.Show($"Find multiple records with propertyName={propertyName} but none of them contains partClassType={partClassType}");
                     return (null, false);
                 }
 
                 //5
                 if (records.Count == 0)
                 {
-                    MessageBox.Show($"No record with propertyName={propertyName} found!");
+                    Log.Information($"No record with propertyName={propertyName} found!");
                     return (null, false);
                 }
 
@@ -103,39 +106,108 @@ namespace CodelistLibrary
         }
 
 
-        /// <summary>
-        /// <para>1. Find codelist table name from "PropertyNameToCodeListMap" </para>
-        /// <para>2. Find CodelistValueView by using tablename and valudID </para>
-        /// <para> </para>
-        /// <para> </para>
-        /// <para> </para>
-        /// </summary>
-        /// <param name="propertyName">Spec proertyName</param>
-        /// <param name="valueID">valueID (如果此值可以被转为整数，则此值代表valueId, 如此值为一个无法转为整数的字符串，则代表shortStringValue)</param>
-        /// <returns>Return null if no table is found</returns>
-        public static CodelistValueView CodelistLookup(string propertyName, string valueID)
-        {
-            string clTableName;
-            string sql = "select CodeListTableName from PropertyNameToCodeListMap where PropertyName='" + propertyName + "'";
-            var xx = ConnStr.Str();
-            using (IDbConnection db = new SQLiteConnection(ConnStr.Str()))
-            {
-                clTableName = db.Query<string>(sql).FirstOrDefault();
-                if (clTableName == null) { return null; }
+        ///// <summary>
+        ///// <para>1. Find codelist table name from "PropertyNameToCodeListMap" </para>
+        ///// <para>2. Find CodelistValueView by using tablename and valudID </para>
+        ///// <para> </para>
+        ///// <para> </para>
+        ///// <para> </para>
+        ///// </summary>
+        ///// <param name="propertyName">Spec proertyName</param>
+        ///// <param name="valueID">valueID (如果此值可以被转为整数，则此值代表valueId, 如此值为一个无法转为整数的字符串，则代表shortStringValue)</param>
+        ///// <returns>Return null if no table is found</returns>
+        //public static CodelistValueView CodelistLookup(string propertyName, string valueID)
+        //{
+        //    string clTableName;
+        //    string sql = "select CodeListTableName from PropertyNameToCodeListMap where PropertyName='" + propertyName + "'";
+        //    var xx = ConnStr.Str();
+        //    using (IDbConnection db = new SQLiteConnection(ConnStr.Str()))
+        //    {
+        //        clTableName = db.Query<string>(sql).FirstOrDefault();
+        //        if (clTableName == null) { return null; }
 
-                string sql1;
-                int number;
-                if (int.TryParse(valueID, out number))
+        //        string sql1;
+        //        int number;
+        //        if (int.TryParse(valueID, out number))
+        //        {
+        //            sql1 = $"select * from CodelistValueView where TableName='{clTableName}' and ValueID={number}";
+        //        }
+        //        else
+        //        {
+        //            sql1 = $"select * from CodelistValueView where TableName='{clTableName}' and shortStringValue='{valueID}'";
+        //        }
+
+        //        return db.Query<CodelistValueView>(sql1).FirstOrDefault();
+        //    }
+        //}
+
+
+        public static CodelistValueView CodelistLookup(string propertyName, string valueID, string partClassType = null)
+        {
+            /*
+             1. get tablename and byShortDesc from propertyName and partClassType (GetCodelistTableName)
+             2. if byShortDesc=true, lookup by tablename and ShortStringValue
+             3. if byShortDesc=false, lookup by tablename and valueId
+             */
+
+            try
+            {
+
+                //1
+                bool byShortDesc;
+                string clTablename;
+
+                (clTablename, byShortDesc) = CodelistUtilities.GetCodelistTableName(propertyName, partClassType);
+                if (string.IsNullOrWhiteSpace(clTablename)) { return null; }
+
+                //2.3
+                CodelistValueView value;
+                if (byShortDesc == true)
                 {
-                    sql1 = $"select * from CodelistValueView where TableName='{clTableName}' and ValueID={number}";
+                    value = CodelistAPI.GetValueFromTableNameAndShortStringValue(clTablename, valueID);
                 }
                 else
                 {
-                    sql1 = $"select * from CodelistValueView where TableName='{clTableName}' and shortStringValue='{valueID}'";
+                    int result;
+                    bool success = int.TryParse(valueID, out result);
+                    if (success)
+                    {
+                        value = CodelistAPI.GetValueFromTableNameAndValueId(clTablename, result);
+                    }
+                    else
+                    {
+                        value = null;
+                    }
                 }
+                return value;
 
-                return db.Query<CodelistValueView>(sql1).FirstOrDefault();
             }
+            catch (Exception ex)
+            {
+
+                return null;
+            }
+            //string clTableName;
+            //string sql = "select CodeListTableName from PropertyNameToCodeListMap where PropertyName='" + propertyName + "'";
+            //var xx = ConnStr.Str();
+            //using (IDbConnection db = new SQLiteConnection(ConnStr.Str()))
+            //{
+            //    clTableName = db.Query<string>(sql).FirstOrDefault();
+            //    if (clTableName == null) { return null; }
+
+            //    string sql1;
+            //    int number;
+            //    if (int.TryParse(valueID, out number))
+            //    {
+            //        sql1 = $"select * from CodelistValueView where TableName='{clTableName}' and ValueID={number}";
+            //    }
+            //    else
+            //    {
+            //        sql1 = $"select * from CodelistValueView where TableName='{clTableName}' and shortStringValue='{valueID}'";
+            //    }
+
+            //    return db.Query<CodelistValueView>(sql1).FirstOrDefault();
         }
     }
 }
+

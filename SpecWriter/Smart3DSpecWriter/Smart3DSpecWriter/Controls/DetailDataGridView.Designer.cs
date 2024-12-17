@@ -114,7 +114,10 @@
             // 
             this.ContextMenuStrip = this.contextMenuStripDetailDataGrid;
             this.RowTemplate.Height = 28;
+            this.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DetailDataGridView_CellClick);
             this.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DetailDataGridView_CellDoubleClick);
+            this.CellToolTipTextNeeded += new System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler(this.DetailDataGridView_CellToolTipTextNeeded);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.DetailDataGridView_KeyUp);
             this.contextMenuStripDetailDataGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);

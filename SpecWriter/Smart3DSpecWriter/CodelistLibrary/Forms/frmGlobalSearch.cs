@@ -41,7 +41,7 @@ namespace CodelistLibrary
             if (chkTableName.Checked && chkTableValues.Checked)
             {
                 var results = CodelistAPI.GetValueList("select * from CodelistValueView")
-                    .Search(x => x.LongStringValue, x => x.ShortStringValue, x => x.TableName)
+                    .Search(x => x.LongStringValue, x => x.ShortStringValue, x => x.TableName, x=>x.ValueId.ToString())
                     .SetCulture(StringComparison.CurrentCultureIgnoreCase)
                     .ContainingAll(words)
                     .Select(x => new { x.ValueId, x.TableName, x.ShortStringValue, x.LongStringValue });

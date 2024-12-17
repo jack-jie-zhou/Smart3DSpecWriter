@@ -150,6 +150,7 @@
             // 
             this.button2.Label = "Settings";
             this.button2.Name = "button2";
+            this.button2.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button2_Click);
             // 
             // group5
             // 

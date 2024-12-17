@@ -27,6 +27,16 @@
     </DocumentationSources>
     <VisibleItems>Privates, PrivateFields, Protected, SealedProtected, ProtectedInternalAsProtected, NonBrowsable</VisibleItems>
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
+    <HelpFileFormat>Website</HelpFileFormat>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <PresentationStyle>Default2022</PresentationStyle>
+    <CleanIntermediates>True</CleanIntermediates>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <IndentHtml>False</IndentHtml>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
+    <HtmlHelp1xCompilerPath>C:\Program Files\HTML Help Workshop\</HtmlHelp1xCompilerPath>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
