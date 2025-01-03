@@ -7,6 +7,9 @@ using System.Windows.Forms;
 
 namespace Smart3DSpecWriter.PipeBranchTable
 {
+    /// <summary>
+    /// Extension function of class List &lt;PipeBranchRow&gt;
+    /// </summary>
     public static class PipeBranchRowListExtension
     {
         public static double[] GetHeadSizes(this List<PipeBranchRow> list)
@@ -126,8 +129,6 @@ namespace Smart3DSpecWriter.PipeBranchTable
             sheet.Cells.ColumnWidth = 100;
             sheet.Cells.EntireColumn.AutoFit();
             sheet.Cells.EntireRow.AutoFit();
-
-
         }
     }
 }
