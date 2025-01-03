@@ -16,7 +16,7 @@ namespace CodelistLibrary
         /// Return connection string value of "YourConnectionStringName"
         /// </summary>
         /// <returns></returns>
-        static public string Str()
+        public static string Str()
         {
             return ConfigurationManager.ConnectionStrings["YourConnectionStringName"].ConnectionString;
         }

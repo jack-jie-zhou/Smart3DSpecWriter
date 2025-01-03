@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Smart3DSpecWriter.PipeBranchEditor {
+namespace Smart3DSpecWriter.PipeBranchTable {
     
     
     /// <summary>
@@ -682,7 +682,7 @@ namespace Smart3DSpecWriter.PipeBranchEditor {
         }
     }
 }
-namespace Smart3DSpecWriter.PipeBranchEditor.ReferenceDataSetTableAdapters {
+namespace Smart3DSpecWriter.PipeBranchTable.ReferenceDataSetTableAdapters {
     
     
     /// <summary>

@@ -1,5 +1,10 @@
 ﻿using Microsoft.Office.Interop.Excel;
 using Microsoft.Office.Tools;
+//using Microsoft.Office.Tools.Excel;
+
+//using Microsoft.Office.Tools.Excel;
+
+//using Microsoft.Office.Tools.Excel;
 using Serilog;
 using Smart3DSpecWriter.Excel;
 using Smart3DSpecWriter.Utilities;
@@ -68,16 +73,16 @@ namespace Smart3DSpecWriter
         /// <summary>
         /// Whenever a new file is opened, We need a new instance of BrowserControl, and need to Activate ActiveWorkbook
         /// </summary>
-       public void SetBrowserControlToNewFile()
+        public void SetBrowserControlToNewFile()
         {
             try
             {
-               CustomTaskPanes.Remove(Globals.Smart3DAddIn._customTaskPane);
-               _browserControl = new BrowserControl();
-                
-               _customTaskPane = Globals.Smart3DAddIn.CustomTaskPanes.Add(Globals.Smart3DAddIn._browserControl, "Editor");
+                CustomTaskPanes.Remove(Globals.Smart3DAddIn._customTaskPane);
+                _browserControl = new BrowserControl();
+
+                _customTaskPane = Globals.Smart3DAddIn.CustomTaskPanes.Add(Globals.Smart3DAddIn._browserControl, "Editor");
                 _customTaskPane.Width = 600;
-               _customTaskPane.Visible = true;
+                _customTaskPane.Visible = true;
                 if (Application.ActiveWorkbook != null)
                 {
                     WorkbookActivate(Application.ActiveWorkbook);
@@ -156,7 +161,7 @@ namespace Smart3DSpecWriter
                 List<CellInfo> cellInfos = _sheetInfo.ReadDetailsRow(row);
                 if (cellInfos != null && _browserControl != null)
                 {
-                    _browserControl.SetDetailInformation(cellInfos,_sheet,_sheetInfo.PartClassType);
+                    _browserControl.SetDetailInformation(cellInfos, _sheet, _sheetInfo.PartClassType);
                     _detailInformationForCopy = cellInfos;
                     _definitionInformationForCopy = null;
                 }
@@ -165,10 +170,57 @@ namespace Smart3DSpecWriter
                 List<CellInfo> cellInfoDef = _sheetInfo.DefinitionRowInfomation;
                 if (cellInfos != null)
                 {
-                    _browserControl.SetDefinitionInformation(cellInfoDef,_sheet);
+                    _browserControl.SetDefinitionInformation(cellInfoDef, _sheet);
                     _definitionInformationForCopy = cellInfoDef;
                 }
+
+                //Highlight
+                if (GlobalSettings.HighlightSelectedRowAndCol)
+                    HighRowAndColOfSelectedCell(Target);
             }
+        }
+
+        private void HighRowAndColOfSelectedCell(Range selectedRange)
+        {
+            if (_sheetInfo == null) return;
+            int startRow = _sheetInfo.StartRowNumber;
+            int endRow = _sheetInfo.EndRowNumber;
+
+            int endCol = _sheetInfo.DetailLastColumnNumber;
+            int startCol = 2;
+
+            // Get the row and column of the selected cell
+            int selectedRow = selectedRange.Row;
+            int selectedColumn = selectedRange.Column;
+            Worksheet sheet = selectedRange.Worksheet;
+            Range columnRange = sheet.Range[sheet.Cells[startRow, selectedColumn], sheet.Cells[endRow, selectedColumn]];
+            Range rowRange = sheet.Range[sheet.Cells[selectedRow, startCol], sheet.Cells[selectedRow, endCol]];
+
+            Range clearRange = sheet.Range[sheet.Cells[startRow, startCol], sheet.Cells[endRow, endCol]];
+
+            // Clear previous highlighting
+            //columnRange.Interior.Color = XlRgbColor.rgbWhite;
+            //rowRange.Rows.Interior.Color = XlRgbColor.rgbWhite;
+
+            clearRange.Interior.Color = XlRgbColor.rgbWhite;
+
+            clearRange.Borders.LineStyle = XlLineStyle.xlContinuous; // Default line style
+            clearRange.Borders.Weight = XlBorderWeight.xlThin;      // Default weight
+            clearRange.Borders.Color = XlRgbColor.rgbLightGray;// System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.Black); // Default color
+
+
+            //sheet.Rows.Interior.Color = XlRgbColor.rgbWhite;
+            // Range rows = sheet.Range[sheet.Cells[startRow,1],sheet.Cells[endRow,1]];
+            //Range rows = sheet.Range.Rows[startRow]
+            //rows.Interior.Color=XlRgbColor.rgbWhite;
+
+            // Highlight the entire row
+            // Range rowRange = sheet.Rows[selectedRow];
+            rowRange.Interior.Color = XlRgbColor.rgbYellow;
+
+            // Highlight the entire column
+            // Range columnRange = sheet.Columns[selectedColumn];
+            columnRange.Interior.Color = XlRgbColor.rgbLightBlue;
         }
 
         private void ActiveSheetChanged(object Sh)
@@ -182,9 +234,9 @@ namespace Smart3DSpecWriter
 
                 //Definition
                 List<CellInfo> cellInfos = _sheetInfo.DefinitionRowInfomation;
-                if (cellInfos!=null )
+                if (cellInfos != null)
                 {
-                    _browserControl.SetDefinitionInformation(cellInfos,_sheet);
+                    _browserControl.SetDefinitionInformation(cellInfos, _sheet);
                     _definitionInformationForCopy = cellInfos;
                 }
 
@@ -192,11 +244,23 @@ namespace Smart3DSpecWriter
                 List<CellInfo> cellInfoDetails = _sheetInfo.DetailTitleRowInformation;
                 if (cellInfoDetails != null)
                 {
-                    _browserControl.SetDetailInformation(cellInfoDetails,_sheet, _sheetInfo.PartClassType);
+                    _browserControl.SetDetailInformation(cellInfoDetails, _sheet, _sheetInfo.PartClassType);
                     _detailInformationForCopy = cellInfoDetails;
+                }
+                try
+                {
+                    _sheetNameList = GetSheetNameFromBook.GetSheetNames(_sheet.Application.ActiveWorkbook);
+                    //   _browserControl.AddSheetNameList(_sheetNameList);
+
+                }
+                catch (System.Exception ex)
+                {
+                    Log.Error("{0}", ex);
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
+
 
         private void WorkbookActivate(Workbook Wb)
         {
@@ -215,6 +279,7 @@ namespace Smart3DSpecWriter
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
+            this.Application.SheetSelectionChange -= this.Application_SheetSelectionChange;
         }
 
 

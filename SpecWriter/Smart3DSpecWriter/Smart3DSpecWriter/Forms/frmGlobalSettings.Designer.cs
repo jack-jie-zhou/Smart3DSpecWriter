@@ -31,9 +31,10 @@
             this.chkShowTooltip = new System.Windows.Forms.CheckBox();
             this.bnSave = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtIconPath = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.bnSelectIconPath = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtIconPath = new System.Windows.Forms.TextBox();
+            this.chkHighlightSeledRowAndCol = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +63,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.chkHighlightSeledRowAndCol);
             this.groupBox1.Controls.Add(this.bnSelectIconPath);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtIconPath);
@@ -73,24 +75,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detail Data Grid Settings";
             // 
-            // txtIconPath
-            // 
-            this.txtIconPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIconPath.Location = new System.Drawing.Point(95, 56);
-            this.txtIconPath.Name = "txtIconPath";
-            this.txtIconPath.Size = new System.Drawing.Size(624, 26);
-            this.txtIconPath.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Icon Path";
-            // 
             // bnSelectIconPath
             // 
             this.bnSelectIconPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -101,6 +85,34 @@
             this.bnSelectIconPath.Text = "...";
             this.bnSelectIconPath.UseVisualStyleBackColor = true;
             this.bnSelectIconPath.Click += new System.EventHandler(this.bnSelectIconPath_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Icon Path";
+            // 
+            // txtIconPath
+            // 
+            this.txtIconPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIconPath.Location = new System.Drawing.Point(95, 56);
+            this.txtIconPath.Name = "txtIconPath";
+            this.txtIconPath.Size = new System.Drawing.Size(624, 26);
+            this.txtIconPath.TabIndex = 2;
+            // 
+            // chkHighlightSeledRowAndCol
+            // 
+            this.chkHighlightSeledRowAndCol.AutoSize = true;
+            this.chkHighlightSeledRowAndCol.Location = new System.Drawing.Point(179, 24);
+            this.chkHighlightSeledRowAndCol.Name = "chkHighlightSeledRowAndCol";
+            this.chkHighlightSeledRowAndCol.Size = new System.Drawing.Size(286, 24);
+            this.chkHighlightSeledRowAndCol.TabIndex = 5;
+            this.chkHighlightSeledRowAndCol.Text = "Highlight selected Row and Column";
+            this.chkHighlightSeledRowAndCol.UseVisualStyleBackColor = true;
             // 
             // frmGlobalSettings
             // 
@@ -126,5 +138,6 @@
         private System.Windows.Forms.Button bnSelectIconPath;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtIconPath;
+        private System.Windows.Forms.CheckBox chkHighlightSeledRowAndCol;
     }
 }

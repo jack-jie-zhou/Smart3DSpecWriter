@@ -7,10 +7,22 @@ using System.Web.Script.Serialization;
 
 namespace Smart3DSpecWriter.PipeBranchTable
 {
+    /// <summary>
+    /// List of PipeBranchRow
+    /// </summary>
     public class PipeBranchRowList : List<PipeBranchRow>
     {
+        /// <summary>
+        /// Piping Material Class Name
+        /// </summary>
         public string PMCName { get; }
 
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="range"></param>
+        /// <param name="pbSheet"></param>
+        /// <exception cref="ArgumentException"></exception>
         public PipeBranchRowList(Range range, PipeBranchSheet pbSheet)
         {
             Worksheet sheet = pbSheet.Sheet;
@@ -64,7 +76,11 @@ namespace Smart3DSpecWriter.PipeBranchTable
 
             }
         }
-
+        /// <summary>
+        /// convert type of value as double
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         private double CellAsDouble(dynamic value)
         {
             if (value == null)
@@ -80,7 +96,9 @@ namespace Smart3DSpecWriter.PipeBranchTable
                 return 0;
             }
         }
-
+        /// <summary>
+        /// dump to file x123456.txt
+        /// </summary>
         public void Dump()
         {
             var ser = new JavaScriptSerializer();

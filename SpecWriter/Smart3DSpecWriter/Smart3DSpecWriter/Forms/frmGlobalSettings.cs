@@ -26,6 +26,8 @@ namespace Smart3DSpecWriter.Forms
         private void bnSave_Click(object sender, EventArgs e)
         {
             GlobalSettings.ShowTooltip = chkShowTooltip.Checked;
+            GlobalSettings.HighlightSelectedRowAndCol=chkHighlightSeledRowAndCol.Checked;
+            GlobalSettings.IconPath =txtIconPath.Text;
             GlobalSettings.Save();
             Close();
         }
@@ -34,6 +36,7 @@ namespace Smart3DSpecWriter.Forms
         {
             GlobalSettings.Load();
             chkShowTooltip.Checked = GlobalSettings.ShowTooltip;
+            chkHighlightSeledRowAndCol.Checked = GlobalSettings.HighlightSelectedRowAndCol;
             txtIconPath.Text = GlobalSettings.IconPath; 
         }
 

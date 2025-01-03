@@ -39,6 +39,7 @@ namespace Smart3DSpecWriter
             lstSheetNameList.DataSource = null;
             lstSheetNameList.DataSource = sheetNameList;
             _sheetNameList = sheetNameList;
+            ctlSheetCategory1.SetSheetList(sheetNameList);
         }
 
         /// <summary>
@@ -75,7 +76,7 @@ namespace Smart3DSpecWriter
         {
             detailDataGridView1.SetDataSource(cellInfoDetails,sheet,partClassType);
         }
-
+        
         /// <summary>
         /// SetBrowserWidth(600);
         /// </summary>

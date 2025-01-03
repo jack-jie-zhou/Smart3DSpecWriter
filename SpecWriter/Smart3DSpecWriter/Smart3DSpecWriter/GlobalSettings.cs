@@ -20,6 +20,11 @@ namespace Smart3DSpecWriter
         public static string IconPath;
 
         /// <summary>
+        /// higtlight the selected row and column
+        /// </summary>
+        public static bool HighlightSelectedRowAndCol { get; set; } = false;
+
+        /// <summary>
         /// Show tool tip in Browser Control DetailDataGridView, true = show, false = no shown
         /// </summary>
         public static bool ShowTooltip { get; set; } = true;
@@ -40,7 +45,8 @@ namespace Smart3DSpecWriter
             var settings = new GlobalSettingsData
             {
                 ShowTooltip = ShowTooltip,
-                iconPath = IconPath
+                iconPath = IconPath,
+                highLightSelectedRowAndCol = HighlightSelectedRowAndCol
             };
             string json = JsonConvert.SerializeObject(settings);
             File.WriteAllText(SETTINGFILENAME, json);
@@ -58,6 +64,7 @@ namespace Smart3DSpecWriter
                 var settings = JsonConvert.DeserializeObject<GlobalSettingsData>(json);
                 ShowTooltip = settings.ShowTooltip;
                 IconPath=settings.iconPath;
+                HighlightSelectedRowAndCol=settings.highLightSelectedRowAndCol;
             }
         }
 
@@ -65,6 +72,7 @@ namespace Smart3DSpecWriter
         private class GlobalSettingsData
         {
             public bool ShowTooltip;
+            public bool highLightSelectedRowAndCol;
             public string iconPath = "";
         }
     }

@@ -7,12 +7,14 @@ using System.Linq;
 
 namespace Smart3DSpecWriter.PipeBranchTable
 {
-
+    /// <summary>
+    /// Write PipeBranch sheet with name 'TemporaryPipeBranch'
+    /// </summary>
     public static class WritePipeBranchTable
     {
-
-
-
+        /// <summary>
+        /// Write list of PipeBranchRow to sheet "TemporaryPipeBranch"
+        /// </summary>
         public static void WritePipeBranch()
         {
             List<PipeBranchRow> list = new List<PipeBranchRow>();
@@ -61,6 +63,14 @@ namespace Smart3DSpecWriter.PipeBranchTable
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sheet"></param>
+        /// <param name="list"></param>
+        /// <param name="angle"></param>
+        /// <param name="pmc"></param>
+        /// <param name="unit"></param>
         private static void AddContent(Worksheet sheet, List<PipeBranchRow> list, double angle, string pmc, string unit)
         {
             try
@@ -94,6 +104,11 @@ namespace Smart3DSpecWriter.PipeBranchTable
 
         }
 
+        /// <summary>
+        /// get sc,sc2,sc3 from string code
+        /// </summary>
+        /// <param name="code">-</param>
+        /// <returns>-</returns>
         private static (string, string, string) GetCodes(string code)
         {
             string sc = "", sc2 = "", sc3 = "";
@@ -117,6 +132,11 @@ namespace Smart3DSpecWriter.PipeBranchTable
             return r;
         }
 
+        /// <summary>
+        /// Get angle range from angle value, e.g. from 90 to 89.5 and 90.5
+        /// </summary>
+        /// <param name="angle">-</param>
+        /// <returns>-</returns>
         private static (string, string) GetAngles(double angle)
         {
             (string high, string low) r = (high: "", low: "");
@@ -126,7 +146,10 @@ namespace Smart3DSpecWriter.PipeBranchTable
         }
 
 
-
+        /// <summary>
+        /// Add Header row for branchtable sheet
+        /// </summary>
+        /// <param name="sheet">-</param>
         private static void AddHeader(Worksheet sheet)
         {
             sheet.Cells[1, 1].Value = "Head";

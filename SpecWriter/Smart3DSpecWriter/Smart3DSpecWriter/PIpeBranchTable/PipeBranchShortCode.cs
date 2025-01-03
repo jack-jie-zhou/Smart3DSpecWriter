@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace Smart3DSpecWriter.PipeBranchTable
 {
+    /// <summary>
+    ///  A class to operate ShortCode, SecondaryshortCode and TertiaryShortCode
+    /// </summary>
     public class PipeBranchShortCode
     {
         private string sc;
         private string sc2;
         private string sc3;
 
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="sc"></param>
+        /// <param name="sc2"></param>
+        /// <param name="sc3"></param>
         public PipeBranchShortCode(string sc, string sc2, string sc3)
         {
             this.sc = sc??"";
@@ -19,15 +28,32 @@ namespace Smart3DSpecWriter.PipeBranchTable
             this.sc3 = sc3??"";
         }
 
+        /// <summary>
+        /// ShortCode 1
+        /// </summary>
         public string ShortCode1  => sc;
+        /// <summary>
+        /// ShortCode 2
+        /// </summary>
         public string ShortCode2 => sc2;
+        /// <summary>
+        /// ShortCode 3
+        /// </summary>
         public string ShortCode3 => sc3;
 
+        /// <summary>
+        /// Convert PipeBranchShortCode instance to a string
+        /// </summary>
+        /// <param name="sc">-</param>
         public static implicit operator string(PipeBranchShortCode sc)
         {
             return $"{sc.ShortCode1}\n{sc.ShortCode2}\n{sc.ShortCode3}";
         }
 
+        /// <summary>
+        /// decode string as PipeBranchShortCode instance
+        /// </summary>
+        /// <param name="codeString"></param>
         public static explicit operator PipeBranchShortCode(string codeString)
         {
             (string sc, string sc2, string sc3) codes = GetCodes(codeString);
@@ -35,6 +61,11 @@ namespace Smart3DSpecWriter.PipeBranchTable
             return sc;
         }
 
+        /// <summary>
+        /// decode string as sc, sc2, sc3 - these are private fields of class PipeBranchShortCode
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
         private static (string, string, string) GetCodes(string code)
         {
             string sc = "", sc2 = "", sc3 = "";

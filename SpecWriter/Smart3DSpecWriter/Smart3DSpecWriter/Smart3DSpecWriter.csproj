@@ -335,6 +335,9 @@
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSettings.cs" />
+    <Compile Include="PipeBranchEditor\ReferenceDataSet.cs">
+      <DependentUpon>ReferenceDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PipeBranchEditor\ReferenceDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -350,6 +353,14 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SpecTask\CtlSheetCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpecTask\CtlSheetCategory.Designer.cs">
+      <DependentUpon>CtlSheetCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecTask\SheetStatus.cs" />
+    <Compile Include="SpecTask\SpecTaskDbUtilities.cs" />
     <Compile Include="Utilities\CommonFunctions.cs" />
     <Compile Include="Utilities\GetSheetNameFromBook.cs" />
     <Compile Include="PIpeBranchTable\ReadPipeBranch.cs" />
@@ -391,6 +402,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SpecTask\CtlSheetCategory.resx">
+      <DependentUpon>CtlSheetCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
